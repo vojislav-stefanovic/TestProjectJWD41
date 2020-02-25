@@ -1,0 +1,30 @@
+<div>
+<form>
+	<div class="form-group">
+	<label for="ime">Ime i prezime</label>
+	<input id="ime" ng-model="takmicar.imeIprezime" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="drzava">Drzava</label>
+	<input id="drzava" ng-model="takmicar.drzava" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="visina">Visina</label>
+	<input id="visina" ng-model="takmicar.visina" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="godiste">Godina rodjenja</label>
+	<input id="godiste" ng-model="takmicar.godinaRodjenja" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="email">E-mail</label>
+	<input id="email" ng-model="takmicar.email" class="form-control">
+	</div>
+	<div class="form-group">
+	<label>Skakaonica</label>
+	<select class="form-control" ng-model="takmicar.skakaonicaId" ng-options = "s.id as s.naziv for s in skakaonice">
+	</select>
+	</div>
+	<button ng-click="izmeni()" class="btn btn-warning">Izmeni</button>
+</form>
+</div>

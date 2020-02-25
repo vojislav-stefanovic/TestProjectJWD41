@@ -1,0 +1,82 @@
+<div>
+<form>
+	<div class="form-group">
+	<label for="ime">Ime i prezime</label>
+	<input id="ime" ng-model="takmicar.imeIprezime" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="drzava">Drzava</label>
+	<input id="drzava" ng-model="takmicar.drzava" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="visina">Visina</label>
+	<input id="visina" ng-model="takmicar.visina" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="godiste">Godina rodjenja</label>
+	<input id="godiste" ng-model="takmicar.godinaRodjenja" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="email">E-mail</label>
+	<input id="email" ng-model="takmicar.email" class="form-control">
+	</div>
+	<div class="form-group">
+	<label>Skakaonica</label>
+	<select class="form-control" ng-model="takmicar.skakaonicaId" ng-options = "s.id as s.naziv for s in skakaonice">
+	</select>
+	</div>
+	<button ng-click="dodaj()" class="btn btn-primary">Dodaj</button>
+</form>
+<h3>Pretraga</h3>
+<form>
+	<div class="form-group">
+	<label for="ime">Ime i prezime</label>
+	<input id="ime1" ng-model="trazeniTakmicar.imeIprezime" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="drzava">Drzava</label>
+	<input id="drzava1" ng-model="trazeniTakmicar.drzava" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="godiste1">Godiste od</label>
+	<input id="godiste1" ng-model="trazeniTakmicar.minGodiste" class="form-control">
+	</div>
+	<div class="form-group">
+	<label for="godiste2">Godiste do</label>
+	<input id="godiste2" ng-model="trazeniTakmicar.maxGodiste" class="form-control">
+	</div>
+	<button ng-click="pretraga()" class="btn btn-primary">Pretraga</button>
+</form>
+
+	<div class="btn-group float-right">
+			<button ng-disabled="page == 0" ng-click="nazad()" class="btn btn-info">Prethodna</button>
+			<button ng-disabled="page == totalPages - 1" ng-click="napred()" class="btn btn-info">Sledeca</button>
+	</div>
+
+<table class="table table-striped">
+	<thead class="thead-dark">
+	<tr>
+		<th>Ime i prezime</th>
+		<th>Drzava</th>
+		<th>Godina rodjenja</th>
+		<th>Visina</th>
+		<th>Skakaonica</th>
+		<th colspan=3>Actions</th>	
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="t in takmicari">
+		<td>{{t.imeIprezime}}</td>
+		<td>{{t.drzava}}</td>
+		<td>{{t.godinaRodjenja}}</td>
+		<td>{{t.visina}}</td>
+		<td>{{t.nazivSkakaonice}}</td>
+		<td>	
+		<button class="btn btn-warning" ng-click="izmeni(t.id)">Izmeni</button>
+		<button class="btn btn-danger" ng-click="obrisi(t.id)">Obrisi</button>
+		<button class="btn btn-primary" ng-click="skok(t.id)">Skok</button>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</div>
