@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import jwd.wafepa.model.Skok;
 import jwd.wafepa.model.Takmicar;
 import jwd.wafepa.service.SkokService;
@@ -82,18 +83,27 @@ public class ApiTakmicariController {
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
     public ResponseEntity<TakmicarDTO> getOne(@PathVariable Long id) {
 
-        return Optional.ofNullable(takmicarService.findOne(id))
-                .map(takmicar -> new ResponseEntity<>(toDTO.convert(takmicar), HttpStatus.OK))
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        Takmicar takmicar = takmicarService.findOne(id);
+
+        if (takmicar == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(toDTO.convert(takmicar), HttpStatus.OK);
 
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/{id}")
     public ResponseEntity<TakmicarDTO> delete(@PathVariable Long id) {
 
-        return Optional.ofNullable(takmicarService.delete(id))
-                .map(takmicar -> new ResponseEntity<>(toDTO.convert(takmicar), HttpStatus.OK))
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        Takmicar takmicar = takmicarService.findOne(id);
+        if (takmicar == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        takmicarService.delete(id);
+
+        return new ResponseEntity<>(toDTO.convert(takmicar), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.POST)

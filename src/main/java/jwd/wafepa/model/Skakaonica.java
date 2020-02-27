@@ -11,9 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "tbl_skakaonica")
 public class Skakaonica {
 
@@ -33,10 +30,54 @@ public class Skakaonica {
     @OneToMany(mappedBy = "skakaonica")
     private List<Takmicar> takmicari = new ArrayList<>();
 
+    public Skakaonica() {
+
+    }
+
     public Skakaonica(String naziv, Double k, Double d) {
         this.naziv = naziv;
         this.k = k;
         this.d = d;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNaziv() {
+        return naziv;
+    }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+    }
+
+    public Double getK() {
+        return k;
+    }
+
+    public void setK(Double k) {
+        this.k = k;
+    }
+
+    public Double getD() {
+        return d;
+    }
+
+    public void setD(Double d) {
+        this.d = d;
+    }
+
+    public List<Takmicar> getTakmicari() {
+        return takmicari;
+    }
+
+    public void setTakmicari(List<Takmicar> takmicari) {
+        this.takmicari = takmicari;
     }
 
     public void addTakmicar(Takmicar t) {

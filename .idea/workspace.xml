@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80169202-c72e-42b3-ad86-adbf90dd0380" name="Default Changelist" comment="" />
+    <list default="true" id="80169202-c72e-42b3-ad86-adbf90dd0380" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test_8_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/test_8_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Skakaonica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Skakaonica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Skok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Skok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Takmicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/model/Takmicar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/web/controller/ApiTakmicariController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/web/controller/ApiTakmicariController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/model/Skakaonica.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/model/Skakaonica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/web/dto/TakmicarDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/web/dto/TakmicarDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-8.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +58,11 @@
     </expand>
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XtQvwXGMyLrzuDpHPbvsImlTZk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,6 +71,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -84,7 +113,7 @@
       <workItem from="1582459780359" duration="3094000" />
       <workItem from="1582466316007" duration="1278000" />
       <workItem from="1582473069663" duration="2065000" />
-      <workItem from="1582580791528" duration="2437000" />
+      <workItem from="1582580791528" duration="4928000" />
     </task>
     <servers />
   </component>
@@ -112,6 +141,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="600" y="374" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1581866016460" />
+    <state x="645" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1582823520403">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="645" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1582823520403" />
     <state x="688" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581866193052">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -128,22 +161,22 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="700" y="428" key="Github.Dialog.Accounts.Choose/0.0.1680.1010@0.0.1680.1010" timestamp="1581872109410" />
-    <state width="1637" height="191" key="GridCell.Tab.0.bottom" timestamp="1582656605762">
+    <state width="1637" height="191" key="GridCell.Tab.0.bottom" timestamp="1582824008721">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582656605762" />
-    <state width="1637" height="191" key="GridCell.Tab.0.center" timestamp="1582656605761">
+    <state width="1637" height="191" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
+    <state width="1637" height="191" key="GridCell.Tab.0.center" timestamp="1582824008721">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582656605761" />
-    <state width="1637" height="191" key="GridCell.Tab.0.left" timestamp="1582656605761">
+    <state width="1637" height="191" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
+    <state width="1637" height="191" key="GridCell.Tab.0.left" timestamp="1582824008721">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582656605761" />
-    <state width="1637" height="191" key="GridCell.Tab.0.right" timestamp="1582656605761">
+    <state width="1637" height="191" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
+    <state width="1637" height="191" key="GridCell.Tab.0.right" timestamp="1582824008721">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582656605761" />
+    <state width="1637" height="191" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
     <state width="1637" height="228" key="GridCell.Tab.1.bottom" timestamp="1582656495192">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
