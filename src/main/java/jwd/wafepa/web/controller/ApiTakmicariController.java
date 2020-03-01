@@ -1,26 +1,5 @@
 package jwd.wafepa.web.controller;
 
-import java.util.List;
-import java.util.Optional;
-
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.data.domain.Page;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-
 import jwd.wafepa.model.Skok;
 import jwd.wafepa.model.Takmicar;
 import jwd.wafepa.service.SkokService;
@@ -30,17 +9,31 @@ import jwd.wafepa.support.TakmicarDTOtoTakmicar;
 import jwd.wafepa.support.TakmicarToTakmicarDTO;
 import jwd.wafepa.web.dto.SkokDTO;
 import jwd.wafepa.web.dto.TakmicarDTO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.data.domain.Page;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @RequestMapping(value = "/api/takmicari")
 public class ApiTakmicariController {
 
-    private @NonNull TakmicarService takmicarService;
-    private @NonNull TakmicarDTOtoTakmicar toTakmicar;
-    private @NonNull TakmicarToTakmicarDTO toDTO;
-    private @NonNull SkokToSkokDTO toSkokDTO;
-    private @NonNull SkokService skokService;
+    @Autowired
+    private TakmicarService takmicarService;
+    @Autowired
+    private TakmicarDTOtoTakmicar toTakmicar;
+    @Autowired
+    private TakmicarToTakmicarDTO toDTO;
+    @Autowired
+    private SkokToSkokDTO toSkokDTO;
+    @Autowired
+    private SkokService skokService;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<List<TakmicarDTO>> getAll(
@@ -50,8 +43,8 @@ public class ApiTakmicariController {
             @RequestParam(required = false) Integer maxGodiste,
             @RequestParam(defaultValue = "0") int page) {
 
-        Page<Takmicar> takmicariPaged = null;
-        List<Takmicar> takmicari = null;
+        Page<Takmicar> takmicariPaged;
+        List<Takmicar> takmicari;
 
         takmicariPaged = getTakmicars(imeIprezime, drzava, minGodiste, maxGodiste, page);
 
@@ -125,7 +118,7 @@ public class ApiTakmicariController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
-        if (takmicarDTO == null || takmicarDTO.getSkakaonicaId() == null) {
+        if (takmicarDTO.getSkakaonicaId() == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 

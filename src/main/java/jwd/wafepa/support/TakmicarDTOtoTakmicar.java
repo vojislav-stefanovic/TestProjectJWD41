@@ -13,11 +13,12 @@ import jwd.wafepa.service.TakmicarService;
 import jwd.wafepa.web.dto.TakmicarDTO;
 
 @Component
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class TakmicarDTOtoTakmicar implements Converter<TakmicarDTO, Takmicar> {
 
-	private @NonNull TakmicarService takmicarService;
-	private @NonNull SkakaonicaService skakaonicaService;
+	@Autowired
+	private TakmicarService takmicarService;
+	@Autowired
+	private SkakaonicaService skakaonicaService;
 
 	@Override
 	public Takmicar convert(TakmicarDTO dto) {

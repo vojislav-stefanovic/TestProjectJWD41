@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80169202-c72e-42b3-ad86-adbf90dd0380" name="Default Changelist" comment="" />
+    <list default="true" id="80169202-c72e-42b3-ad86-adbf90dd0380" name="Default Changelist" comment="update3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/service/impl/JpaSkokService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/service/impl/JpaSkokService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/service/impl/JpaTakmicarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/service/impl/JpaTakmicarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/support/SkokDTOtoSkok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/support/SkokDTOtoSkok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/support/TakmicarDTOtoTakmicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/support/TakmicarDTOtoTakmicar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwd/wafepa/web/controller/ApiTakmicariController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwd/wafepa/web/controller/ApiTakmicariController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/TestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/service/impl/JpaSkokService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/service/impl/JpaSkokService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/service/impl/JpaTakmicarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/service/impl/JpaTakmicarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/support/SkokDTOtoSkok.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/support/SkokDTOtoSkok.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/support/TakmicarDTOtoTakmicar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/support/TakmicarDTOtoTakmicar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwd/wafepa/web/controller/ApiTakmicariController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jwd/wafepa/web/controller/ApiTakmicariController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/app/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +50,13 @@
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -51,6 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestProjectJWD41-React" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,12 +113,36 @@
       <workItem from="1582459780359" duration="3094000" />
       <workItem from="1582466316007" duration="1278000" />
       <workItem from="1582473069663" duration="2065000" />
-      <workItem from="1582580791528" duration="5325000" />
+      <workItem from="1582580791528" duration="19259000" />
     </task>
+    <task id="LOCAL-00001" summary="update2">
+      <created>1582837660572</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582837660572</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update2" />
+    <MESSAGE value="update3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#Assign_Data_Sources" timestamp="1581867799536">
@@ -129,30 +177,34 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="595" y="208" key="#xdebugger.evaluate/0.0.1680.1010@0.0.1680.1010" timestamp="1581870906938" />
-    <state x="620" y="246" key="FileChooserDialogImpl" timestamp="1581872039428">
+    <state x="465" y="101" key="CommitChangelistDialog2" timestamp="1583071847748">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="246" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1581872039428" />
-    <state x="700" y="428" key="Github.Dialog.Accounts.Choose" timestamp="1581872109410">
+    <state x="465" y="101" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1583071847748" />
+    <state x="620" y="246" key="FileChooserDialogImpl" timestamp="1582915773861">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="700" y="428" key="Github.Dialog.Accounts.Choose/0.0.1680.1010@0.0.1680.1010" timestamp="1581872109410" />
-    <state width="1637" height="191" key="GridCell.Tab.0.bottom" timestamp="1582824008721">
+    <state x="620" y="246" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1582915773861" />
+    <state x="700" y="428" key="Github.Dialog.Accounts.Choose" timestamp="1582837249842">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
-    <state width="1637" height="191" key="GridCell.Tab.0.center" timestamp="1582824008721">
+    <state x="700" y="428" key="Github.Dialog.Accounts.Choose/0.0.1680.1010@0.0.1680.1010" timestamp="1582837249842" />
+    <state width="1637" height="191" key="GridCell.Tab.0.bottom" timestamp="1583071847855">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
-    <state width="1637" height="191" key="GridCell.Tab.0.left" timestamp="1582824008721">
+    <state width="1637" height="191" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1583071847855" />
+    <state width="1637" height="191" key="GridCell.Tab.0.center" timestamp="1583071847855">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
-    <state width="1637" height="191" key="GridCell.Tab.0.right" timestamp="1582824008721">
+    <state width="1637" height="191" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1583071847855" />
+    <state width="1637" height="191" key="GridCell.Tab.0.left" timestamp="1583071847854">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="191" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582824008721" />
+    <state width="1637" height="191" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1583071847854" />
+    <state width="1637" height="191" key="GridCell.Tab.0.right" timestamp="1583071847855">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="191" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1583071847855" />
     <state width="1637" height="228" key="GridCell.Tab.1.bottom" timestamp="1582656495192">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -173,10 +225,14 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1680.1010@0.0.1680.1010" timestamp="1581868021279" />
-    <state x="341" y="147" key="SettingsEditor" timestamp="1582466978177">
+    <state x="341" y="147" key="SettingsEditor" timestamp="1582915211238">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582466978177" />
+    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582915211238" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1582837673713">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1582837673713" />
     <state x="541" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1582459793002">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

@@ -1,29 +1,27 @@
 package jwd.wafepa;
 
-import javax.annotation.PostConstruct;
-
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import jwd.wafepa.model.Skakaonica;
 import jwd.wafepa.model.Takmicar;
 import jwd.wafepa.service.SkakaonicaService;
 import jwd.wafepa.service.TakmicarService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
 
 @Component
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class TestData {
 
-	private @NonNull TakmicarService takmicarService;
-	private @NonNull SkakaonicaService skakaonicaService;
+	@Autowired
+	private TakmicarService takmicarService;
+	@Autowired
+	private SkakaonicaService skakaonicaService;
 
 	@PostConstruct
 	public void init() {
 
-		Skakaonica s1 = new Skakaonica("Skakaonica1", 1.3, 3.2);
-		Skakaonica s2 = new Skakaonica("Skakaonica2", 1.8, 2.9);
+		Skakaonica s1 = new Skakaonica("Skakaonica1", 85.0, 1.2);
+		Skakaonica s2 = new Skakaonica("Skakaonica2", 90.0, 1.4);
 
 		skakaonicaService.save(s1);
 		skakaonicaService.save(s2);

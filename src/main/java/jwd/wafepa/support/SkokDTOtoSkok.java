@@ -1,21 +1,19 @@
 package jwd.wafepa.support;
 
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.convert.converter.Converter;
-import org.springframework.stereotype.Component;
-
 import jwd.wafepa.model.Skok;
 import jwd.wafepa.model.Takmicar;
 import jwd.wafepa.service.TakmicarService;
 import jwd.wafepa.web.dto.SkokDTO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+
 public class SkokDTOtoSkok implements Converter<SkokDTO, Skok> {
 
-	private @NonNull TakmicarService takmicarService;
+	@Autowired
+	private TakmicarService takmicarService;
 
 	@Override
 	public Skok convert(SkokDTO dto) {

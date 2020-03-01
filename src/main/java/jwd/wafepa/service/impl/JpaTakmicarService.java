@@ -11,10 +11,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class JpaTakmicarService implements TakmicarService {
 
-    private @NonNull TakmicarRepository takmicarRepository;
+    @Autowired
+    private TakmicarRepository takmicarRepository;
 
     @Override
     public Takmicar findOne(Long id) {
@@ -31,7 +31,6 @@ public class JpaTakmicarService implements TakmicarService {
         Takmicar t = takmicarRepository.findOne(id);
         takmicarRepository.delete(id);
         return t;
-
 
     }
 
